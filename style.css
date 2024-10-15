@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --White: hsl(0, 0%, 100%); 
+    --Light-Grey: hsl(217, 12%, 63%); 
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Lighter-Blue: hsl(213, 18%, 24%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+    --Orange: hsl(25, 97%, 53%);
+
+    --font-Overpass: "Overpass", sans-serif;
+}
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body{
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-Overpass);
+    font-size: 14px;
+    height: 100vh;
+    width: 100vw;
+}
+.start-state{
+    width: 25vw;
+    background-color: var(--Dark-Blue);
+    padding: 2%;
+    border-radius: 20px;
+}
+.star{
+    padding: 3%;
+    background-color: var(--Lighter-Blue);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.star-ques{
+    color: var(--White);
+    margin-bottom: 3%;
+}
+.start-para{
+    color: var(--Light-Grey);
+    font-size: 1em;
+}
+.rating-btns{
+    margin: 10% 0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.rating-btns > button{
+    padding: 4%;
+    background-color: var(--Lighter-Blue);
+    border-radius: 50%;
+    color: var(--Light-Grey);
+    width: 40px;
+    height: 40px;
+    border: none;
+    font-weight: 700;
+}
+.rating-btns>button:hover {
+    background-color: var(--Orange);
+    color: var(--Very-Dark-Blue);
+}
+input{
+    width: 100%;
+    border-radius: 30px;
+    padding: 5%;
+    border: none;
+    background-color: var(--Orange);
+    color: var(--Dark-Blue);
+    font-weight: 700;
+}
+input:hover{
+    background-color: var(--White);
+    color: var(--Very-Dark-Blue);
+}
+
+
+
+/********** THANK YOU STATTE   *****/
+.thank-you-state{
+    width: 27vw;
+    padding: 4% 2%;
+    background-color: var(--Dark-Blue);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+}
+#selected{
+    margin: 4vh 0;
+    padding: 5px 30px;
+    border-radius: 20px;
+    color: var(--Orange);
+    background-color: var(--Lighter-Blue);
+    font-weight: 500;
+}
+h2{
+    color: var(--White);
+    margin-bottom: 2vh;
+    font-size: 2em;
+}
+#message{
+    color: var(--Light-Grey);
+    text-align: center;
+    line-height: 1.3;
+}
+.bg-white{
+    background-color: var(--White);
+}
+
+
+
+@media screen and (max-width:500px) {
+    .start-state{
+        width: 80vw;
+        padding: 4vh;
+    }
+    .thank-you-state{
+        width: 80vw;
+        padding: 4vh;
+    }
+    
+}
